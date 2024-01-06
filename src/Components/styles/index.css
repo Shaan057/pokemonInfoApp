@@ -28,6 +28,7 @@ body {
   order: 1;
 }
 .card {
+  cursor: pointer;
   width: 280px;
   background-color: #9ef9d8;
   border-radius: 1rem;
@@ -57,6 +58,7 @@ body {
     order: 0;
   }
   .right-content {
+     top: 100px;
     color: black;
     order: 1;
     background-color: transparent;

@@ -10,7 +10,7 @@ const Home = () => {
     const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/")
     const [nextUrl, setNextUrl] = useState();
     const [prevUrl, setPrevUrl] = useState();
-    const [pokeDex, setPokeDex] = useState();
+    const [pokeDex, setPokeDex] = useState(null);
 
     const pokeFun = async () => {
         setLoading(true)
@@ -56,7 +56,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="right-content">
-                    <Pokeinfo data={pokeDex} />
+                    {pokeDex ? <Pokeinfo data={pokeDex} /> : <p> &#8592; Click on POKEMON to see Details</p>}
                 </div>
             </div>
         </div>
